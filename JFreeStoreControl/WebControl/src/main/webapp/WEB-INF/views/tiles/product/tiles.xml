@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="baseLayoutProduct" template="/WEB-INF/views/tiles/default/layout.jsp">
+		<put-attribute name="title" value="Управление продуктами" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/default/header.jsp" />
+		<put-attribute name="left"	value="/WEB-INF/views/tiles/product/left.jsp" />
+		<put-attribute name="right"	 value="/WEB-INF/views/tiles/default/right.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/default/footer.jsp" />
+	</definition>
+	
+	<!-- Product -->
+	
+	<definition name="showProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Отобразить всех товаром" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/showProduct.jsp" />
+	</definition>
+	
+	<definition name="findProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Найти товар" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/findProduct.jsp" />
+	</definition>
+	
+	<definition name="addProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Добавить товар" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/addProduct.jsp" />
+	</definition>
+	
+	<definition name="delProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Удалить товар" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/delProduct.jsp" />
+	</definition>
+	
+	<definition name="setProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать товар" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/setProduct.jsp" />
+	</definition>
+	
+	<definition name="reviewProduct" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать товар" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/reviewProduct.jsp" />
+	</definition>
+	
+	<!-- Category -->
+	<definition name="showCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Отобразить все категории" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/showCategory.jsp" />
+	</definition>
+	
+	<definition name="findCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Найти категорию" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/findCategory.jsp" />
+	</definition>
+	
+	<definition name="addCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Добавить категорию" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/addCategory.jsp" />
+	</definition>
+	
+	<definition name="delCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Удалить категорию" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/delCategory.jsp" />
+	</definition>
+	
+	<definition name="setCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать категорию" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/setCategory.jsp" />
+	</definition>
+	
+	<definition name="reviewCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать категорию" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/category/reviewCategory.jsp" />
+	</definition>
+	
+	<!-- Manufacturer -->
+	<definition name="showManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Отобразить все производители" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/showManufacturer.jsp" />
+	</definition>
+	
+	<definition name="findManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Найти производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/findManufacturer.jsp" />
+	</definition>
+	
+	<definition name="addManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Добавить производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/addManufacturer.jsp" />
+	</definition>
+	
+	<definition name="delManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Удалить производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/delManufacturer.jsp" />
+	</definition>
+	
+	<definition name="setManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/setManufacturer.jsp" />
+	</definition>
+	
+	<definition name="reviewManufacturer" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/manufacturer/reviewManufacturer.jsp" />
+	</definition>
+	
+	<definition name="selectCategory" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Редактировать производителя" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/selectCategory.jsp" />
+	</definition>
+	
+	<definition name="controlGroup" extends="baseLayoutProduct">
+ 		<put-attribute name="title" value="Управление группами" />
+		<put-attribute name="css" value="product.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/product/group/controlGroup.jsp" />
+	</definition>
+	
+</tiles-definitions>

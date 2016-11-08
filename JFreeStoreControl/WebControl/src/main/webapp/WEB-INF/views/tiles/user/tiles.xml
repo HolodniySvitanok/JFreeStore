@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="baseLayoutUser" template="/WEB-INF/views/tiles/default/layout.jsp">
+		<put-attribute name="title" value="Управление пользователями" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/default/header.jsp" />
+		<put-attribute name="left"	value="/WEB-INF/views/tiles/user/left.jsp" />
+		<put-attribute name="right"	value="/WEB-INF/views/tiles/default/right.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/default/footer.jsp" />
+	</definition>
+	
+	<!-- user -->
+	<definition name="user" extends="baseLayoutUser">
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/user.jsp" />
+	</definition>
+	
+	<definition name="showUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Отобразить всех пользоватаелей" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/showUser.jsp" />
+	</definition>
+	
+	<definition name="addUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Добавить пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/addUser.jsp" />
+	</definition>
+	
+	<definition name="findUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Найти пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/findUser.jsp" />
+	</definition>
+	
+	<definition name="setUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Редактировать пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/setUser.jsp" />
+	</definition>
+	
+	<definition name="delUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Удалить пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/delUser.jsp" />
+	</definition>
+	
+	<definition name="reviewUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Удалить пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/reviewUser.jsp" />
+	</definition>
+	
+	<definition name="infoUser" extends="baseLayoutUser">
+ 		<put-attribute name="title" value="Удалить пользоватаеля" /> 
+		<put-attribute name="css" value="user.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/user/infoUser.jsp" />
+	</definition>
+	
+	
+	
+	
+	
+</tiles-definitions>

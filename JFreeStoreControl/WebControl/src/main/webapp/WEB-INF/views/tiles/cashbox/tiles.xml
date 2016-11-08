@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="cashboxBaseLayout" template="/WEB-INF/views/tiles/default/layout.jsp">
+		<put-attribute name="title" value="Касса" />
+		<put-attribute name="header"	value="/WEB-INF/views/tiles/default/header.jsp" />
+		<put-attribute name="footer"	value="/WEB-INF/views/tiles/default/footer.jsp" />
+	</definition>
+	
+	<definition name="cashbox" extends="cashboxBaseLayout">
+		<put-attribute name="main" value="/WEB-INF/views/pages/cashbox/cashbox.jsp" />
+	</definition>
+	
+	<definition name="statusCashbox" extends="cashboxBaseLayout">
+		<put-attribute name="main" value="/WEB-INF/views/pages/cashbox/statusCashbox.jsp" />
+	</definition>
+	
+	<definition name="userCashbox" extends="cashboxBaseLayout">
+		<put-attribute name="main" value="/WEB-INF/views/pages/cashbox/userCashbox.jsp" />
+	</definition>
+	
+	<definition name="takeCashbox" extends="cashboxBaseLayout">
+		<put-attribute name="main" value="/WEB-INF/views/pages/cashbox/takeCashbox.jsp" />
+	</definition>
+	
+	<definition name="logCashbox" extends="cashboxBaseLayout">
+		<put-attribute name="main" value="/WEB-INF/views/pages/cashbox/logCashbox.jsp" />
+	</definition>
+	
+</tiles-definitions>

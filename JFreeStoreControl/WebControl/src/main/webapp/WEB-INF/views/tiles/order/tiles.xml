@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="baseLayoutOrder" template="/WEB-INF/views/tiles/default/layout.jsp">
+		<put-attribute name="title" value="Управление заказами" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/default/header.jsp" />
+		<put-attribute name="left"	value="/WEB-INF/views/tiles/order/left.jsp" />
+		<put-attribute name="right"	value="/WEB-INF/views/tiles/default/right.jsp" />
+		<put-attribute name="footer"	value="/WEB-INF/views/tiles/default/footer.jsp" />
+	</definition>
+
+	<!-- Order -->
+	<definition name="order" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/order.jsp" />
+	</definition>
+	<definition name="addOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/addOrder.jsp" />
+	</definition>
+	<definition name="findOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/findOrder.jsp" />
+	</definition>
+	<definition name="completeOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/completeOrder.jsp" />
+	</definition>
+	<definition name="activeOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/activeOrder.jsp" />
+	</definition>
+	<definition name="reviewOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/reviewOrder.jsp" />
+	</definition>
+	<definition name="reviewCompleteOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/reviewCompleteOrder.jsp" />
+	</definition>
+	<definition name="setOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/setOrder.jsp" />
+	</definition>
+	<definition name="delOrder" extends="baseLayoutOrder">
+		<put-attribute name="css" value="order.css" />
+		<put-attribute name="main"
+			value="/WEB-INF/views/pages/order/delOrder.jsp" />
+	</definition>
+
+</tiles-definitions>

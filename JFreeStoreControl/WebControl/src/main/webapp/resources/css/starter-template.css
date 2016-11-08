@@ -1,0 +1,21 @@
+body {
+  padding-top: 0px;
+}
+.starter-template {
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.input-group-addon {
+    min-width:200px;
+    text-align:left;
+}
+
+.input-group-mod{
+	padding-bottom: 10px;
+}
+
+.group-mod{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}

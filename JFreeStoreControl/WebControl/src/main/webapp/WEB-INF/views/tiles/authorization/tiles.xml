@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="authorizationLayout" template="/WEB-INF/views/tiles/authorization/layout.jsp">
+		<put-attribute name="title" value="Управление товаром" />
+	</definition>
+	
+	
+	<definition name="authorization" extends="authorizationLayout">
+		<put-attribute name="css" value="authorization.css" />
+		<put-attribute name="main"	value="/WEB-INF/views/pages/authorization/authorization.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
